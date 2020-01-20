@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<center>
+		<ListView fx:id="listView" onMouseClicked="#selectBook" prefHeight="239.0" prefWidth="549.0" BorderPane.alignment="CENTER" />
+	</center>
+   <right>
+      <Button fx:id="Delete" mnemonicParsing="false" onAction="#handleButtonAction" text="Delete" BorderPane.alignment="CENTER" />
+   </right>
+   <bottom>
+      <AnchorPane prefHeight="115.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnFirst" layoutX="93.0" layoutY="76.0" mnemonicParsing="false" onAction="#handleButtonAction" text="First" />
+            <Button fx:id="btnPrev" layoutX="166.0" layoutY="76.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Prev." />
+            <Button fx:id="btnNext" layoutX="369.0" layoutY="76.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Next" />
+            <Button fx:id="btnLast" layoutX="443.0" layoutY="76.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Last" />
+            <Button fx:id="btnSearch" layoutX="384.0" layoutY="24.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Search" />
+            <TextField fx:id="tfBookSearch" layoutX="187.0" layoutY="24.0" />
+            <Label fx:id="lblCurrent" layoutX="71.0" layoutY="136.0" prefHeight="17.0" prefWidth="425.0" textAlignment="CENTER" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

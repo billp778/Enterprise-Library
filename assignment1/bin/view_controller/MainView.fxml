@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<top>
+		<MenuBar BorderPane.alignment="CENTER">
+			<menus>
+            <Menu mnemonicParsing="false" text="Login">
+              <items>
+                <MenuItem fx:id="login" mnemonicParsing="false" onAction="#clickMenuItem" text="Login" />
+                  <MenuItem fx:id="logout" mnemonicParsing="false" onAction="#clickMenuItem" text="Logout" />
+						<MenuItem fx:id="menuQuit" mnemonicParsing="false" onAction="#clickMenuItem" text="Quit" />
+              </items>
+            </Menu>
+				<Menu mnemonicParsing="false" text="Books">
+					<items>
+						<MenuItem fx:id="menuBookList" mnemonicParsing="false" onAction="#clickMenuItem" text="Book List " />
+                  <MenuItem fx:id="menuAddBook" mnemonicParsing="false" onAction="#clickMenuItem" text="Add Book" />
+					</items>
+				</Menu>
+            <Menu mnemonicParsing="false" text="Author">
+              <items>
+                <MenuItem fx:id="menuAuthorList" mnemonicParsing="false" onAction="#clickMenuItem" text="Author List" />
+                  <MenuItem fx:id="menuAddAuthor" mnemonicParsing="false" onAction="#clickMenuItem" text="Add Author" />
+              </items>
+            </Menu>
+				<Menu mnemonicParsing="false" text="Edit">
+					<items>
+						<MenuItem fx:id="AutoGen" mnemonicParsing="false" onAction="#clickMenuItem" text="Auto" />
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+	</top>
+</BorderPane>

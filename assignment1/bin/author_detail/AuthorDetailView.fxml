@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="380.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Label layoutX="37.0" layoutY="37.0" prefHeight="27.0" prefWidth="167.0" text="Author Information" />
+      <Label layoutX="142.0" layoutY="144.0" text="Last Name" />
+      <Label layoutX="136.0" layoutY="90.0" prefHeight="17.0" prefWidth="77.0" text="First Name" />
+      <Label layoutX="136.0" layoutY="198.0" text="Date of Birth" />
+      <Label layoutX="152.0" layoutY="261.0" text="Gender" />
+      <Label layoutX="149.0" layoutY="320.0" text="Website" />
+      <TextField fx:id="fName" layoutX="250.0" layoutY="85.0" />
+      <TextField fx:id="lName" layoutX="250.0" layoutY="139.0" />
+      <TextField fx:id="dob" layoutX="250.0" layoutY="193.0" />
+      <TextField fx:id="gender" layoutX="250.0" layoutY="256.0" />
+      <TextField fx:id="website" layoutX="250.0" layoutY="315.0" />
+      <Button fx:id="save" layoutX="489.0" layoutY="126.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="41.0" prefWidth="95.0" text="Save" />
+   </children>
+</AnchorPane>

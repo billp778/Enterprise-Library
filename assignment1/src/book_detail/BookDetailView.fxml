@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="900.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+	<children>
+		<Label layoutX="142.0" layoutY="89.0" text="Title" />
+		<Label layoutX="67.0" layoutY="171.0" text="Summary " />
+		<Label layoutX="535.0" layoutY="89.0" prefHeight="17.0" prefWidth="29.0" text="Year" />
+		<Label layoutX="112.0" layoutY="361.0" text="ISBN" />
+		<Button fx:id="save" layoutX="228.0" layoutY="501.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="27.0" prefWidth="115.0" text="Save" />
+		<TextField fx:id="tfYear" layoutX="606.0" layoutY="83.0" prefHeight="27.0" prefWidth="132.0" />
+		<TextField fx:id="tfISBN" layoutX="187.0" layoutY="357.0" prefHeight="27.0" prefWidth="194.0" />
+		<TextArea fx:id="taSummary" layoutX="164.0" layoutY="170.0" prefHeight="144.0" prefWidth="349.0" />
+      <TextField fx:id="tfTitle" layoutX="183.0" layoutY="84.0" prefHeight="27.0" prefWidth="297.0" />
+      <ComboBox fx:id="PublisherCombo" layoutX="202.0" layoutY="416.0" prefWidth="150.0" />
+      <Label layoutX="85.0" layoutY="422.0" prefHeight="17.0" prefWidth="70.0" text="Publisher" />
+      <Button fx:id="AuditRecord" layoutX="70.0" layoutY="502.0" mnemonicParsing="false" onAction="#handleButtonAction2" prefHeight="27.0" prefWidth="108.0" text="Audit" />
+      <ListView fx:id="AuthorList" layoutX="584.0" layoutY="237.0" onMouseClicked="#selectRoyalty" prefHeight="378.0" prefWidth="393.0" />
+      <Label layoutX="606.0" layoutY="207.0" prefHeight="17.0" prefWidth="180.0" text="Authors  &amp;  Royalty" />
+      <Button fx:id="addAuth" layoutX="643.0" layoutY="649.0" mnemonicParsing="false" onAction="#handleButtonAction3" text="Add Author" />
+      <Button fx:id="deleteAuth" layoutX="790.0" layoutY="649.0" mnemonicParsing="false" onAction="#handleButtonAction3" text="Delete Author" />
+      <Label layoutX="1019.0" layoutY="306.0" prefHeight="36.0" prefWidth="132.0" text="Double Click Author" />
+      <Label layoutX="1019.0" layoutY="342.0" prefHeight="17.0" prefWidth="115.0" text="To Edit Royalty" />
+	</children>
+</AnchorPane>
